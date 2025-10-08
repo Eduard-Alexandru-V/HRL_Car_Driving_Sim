@@ -13,14 +13,15 @@ The goal of this project is to create a realistic and durable dashboard using re
 
 ## Components & Specifications
 | Components  |  Description  | Image |
-|Arduino Pro Micro
-| Golf 4 instrument cluster shell
-| Golf 4 turn signal stalk
-| Golf 4 wiper stalk
-| 4× standard hobby servos (speedometer, tachometer, fuel, temperature)
-| Custom 3D-printed gearboxes for servo-to-gauge drive
-| Resistors for analog ladder circuits
-| USB cable and basic wiring
+----------------------------------------
+|Arduino Pro Micro|
+| Golf 4 instrument cluster shell|
+| Golf 4 turn signal stalk|
+| Golf 4 wiper stalk|
+| 4× standard hobby servos (speedometer, tachometer, fuel, temperature)|
+| Custom 3D-printed gearboxes for servo-to-gauge drive|
+| Resistors for analog ladder circuits|
+| USB cable and basic wiring|
 
 ---
 
