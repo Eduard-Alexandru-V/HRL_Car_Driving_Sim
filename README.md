@@ -11,17 +11,19 @@ The goal of this project is to create a realistic and durable dashboard using re
 
 ---
 
-## Components & Specifications
-| Components  |  Description  | Image |
-----------------------------------------
-|Arduino Pro Micro|
-| Golf 4 instrument cluster shell|
-| Golf 4 turn signal stalk|
-| Golf 4 wiper stalk|
-| 4× standard hobby servos (speedometer, tachometer, fuel, temperature)|
-| Custom 3D-printed gearboxes for servo-to-gauge drive|
-| Resistors for analog ladder circuits|
-| USB cable and basic wiring|
+## Components Overview
+
+| Component | Description | Photo |
+|-----------|-------------|-------|
+| Arduino Pro Micro / Nano ESP32 | Microcontroller that reads the stalk inputs, controls the servos, and communicates with SimHub over USB. | ![Arduino](path/to/arduino.jpg) |
+| Golf 4 Instrument Cluster Shell | Original dashboard housing; holds the servos and gearboxes, preserving the original look. | ![Cluster](path/to/cluster.jpg) |
+| Golf 4 Turn Signal Stalk | Provides left/right indicators and +/- buttons; input read via resistor ladder. | ![TurnStalk](path/to/turn_stalk.jpg) |
+| Golf 4 Wiper Stalk | Provides OK / UP / DOWN buttons and 4-step rotary switch; input read via resistor ladder. | ![WiperStalk](path/to/wiper_stalk.jpg) |
+| Standard Hobby Servos (x4) | Drives the speedometer, tachometer, fuel, and temperature gauges via 3D-printed gearboxes. | ![Servo](path/to/servo.jpg) |
+| Custom 3D-Printed Gearboxes | Converts servo rotation to the original gauge needle movement; fits inside the cluster shell. | ![Gearbox](path/to/gearbox.jpg) |
+| Resistors for Ladder Circuits | Used to differentiate multiple switch positions on single analog lines. | ![Resistors](path/to/resistors.jpg) |
+| USB Cable | Provides power and allows the Arduino to act as a joystick + serial device for SimHub. | ![USB](path/to/usb.jpg) |
+
 
 ---
 
