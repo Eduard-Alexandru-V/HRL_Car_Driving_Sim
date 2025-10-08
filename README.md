@@ -11,16 +11,16 @@ The goal of this project is to create a realistic and durable dashboard using re
 
 ---
 
-## Components
-
-- Arduino Pro Micro (or Nano ESP32)
-- Golf 4 instrument cluster shell
-- Golf 4 turn signal stalk
-- Golf 4 wiper stalk
-- 4× standard hobby servos (speedometer, tachometer, fuel, temperature)
-- Custom 3D-printed gearboxes for servo-to-gauge drive
-- Resistors for analog ladder circuits
-- USB cable and basic wiring
+## Components & Specifications
+| Components  |  Description  | Image |
+|Arduino Pro Micro
+| Golf 4 instrument cluster shell
+| Golf 4 turn signal stalk
+| Golf 4 wiper stalk
+| 4× standard hobby servos (speedometer, tachometer, fuel, temperature)
+| Custom 3D-printed gearboxes for servo-to-gauge drive
+| Resistors for analog ladder circuits
+| USB cable and basic wiring
 
 ---
 
@@ -44,13 +44,13 @@ The Arduino expects data from SimHub in the following order, each value on a sep
 
 ## Pin Mapping
 
-| Arduino Pin | Function                          | Type                       |
+| Arduino Pin | Function                           | Type                        |
 |-------------|------------------------------------|----------------------------|
 | A0          | Turn stalk +/- buttons             | Analog (resistor ladder)   |
 | A1          | Turn stalk 3-position switch       | Analog (resistor ladder)   |
 | A2          | Wiper stalk OK / UP / DOWN buttons | Analog (resistor ladder)   |
 | A3          | Wiper stalk 4-step rotary switch   | Analog (resistor ladder)   |
-| D2–D5       | Servo outputs (speed, RPM, fuel, temp) | PWM                     |
+| D2–D5       | Servo outputs (speed, RPM, fuel, temp) | PWM                    |
 | USB         | HID joystick and SimHub serial     | Data connection            |
 
 ---
