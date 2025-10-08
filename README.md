@@ -80,7 +80,7 @@ The Arduino expects data from SimHub in the following order, each value on a sep
 - Gearbox assemblies for servo-to-needle drive
 - Mounting brackets and supports for servos inside the cluster shell
 
-STL files are included in the `3d/` folder.
+STL files are included in the `STL/` folder.
 
 ---
 
