@@ -1,5 +1,19 @@
 # HLR Car Driving Simulator 
 
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Components Overview](#components-overview)
+- [Features](#features)
+- [SimHub Integration](#simhub-serial-data-format)
+- [Pin Mapping](#pin-mapping)
+- [Assembly Guide](#assembly)
+- [3D Printed Components](#3d-printed-components)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
+
+  
+
 ## Project Overview
 
 This project involves converting a broken Volkswagen Golf 4 instrument cluster into a fully functional virtual dashboard for vehicle simulation.  
@@ -8,6 +22,8 @@ The original gauge stepper motors and electronics were removed and replaced with
 An Arduino is used to process both control inputs from the stalks and telemetry data from SimHub, allowing the cluster to behave as if it were still installed in the vehicle.
 
 The goal of this project is to create a realistic and durable dashboard using readily available components, while maintaining the authentic look and feel of the original Golf 4 interior.
+
+
 
 ---
 
