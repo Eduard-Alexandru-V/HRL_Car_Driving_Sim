@@ -32,6 +32,8 @@ The goal of this project is to create a realistic and durable dashboard using re
 | Component | Description | Photo |
 |-----------|-------------|-------|
 | Arduino Pro Micro  | Microcontroller that reads the stalk inputs, controls the servos, and communicates with SimHub over USB. | <img src="https://github.com/Eduard-Alexandru-V/HRL_Car_Driving_Sim/blob/main/images/arduino%20pro%20micro.jpeg?raw=true" alt="Arduino Pro Micro" width="200"> |
+| 4 Relay Module | Controls the turn signal lights, sound , high beams and the backlighting from the cluster | <img src="https://github.com/Eduard-Alexandru-V/HRL_Car_Driving_Sim/blob/main/images/4%20Relay%20Module.jpeg?raw=true" width="200"> |
+| 2 Position Switch | Sends a signal to the arduino to turn on the backlight and the main beams in the game | <img src="https://github.com/Eduard-Alexandru-V/HRL_Car_Driving_Sim/blob/main/images/2%20Position%20Switch.jpeg?raw=true" alt="Cluster" width="200"> |
 | Golf 4 Instrument Cluster Shell | Original dashboard housing; holds the servos and gearboxes, preserving the original look. | <img src="https://github.com/Eduard-Alexandru-V/HRL_Car_Driving_Sim/blob/main/images/cluster.jpeg?raw=true" alt="Cluster" width="200"> |
 | Golf 4 Turn Signal Stalk | Provides left/right indicators and +/- buttons; input read via resistor ladder. | <img src="https://github.com/Eduard-Alexandru-V/HRL_Car_Driving_Sim/blob/main/images/turn%20stalk.jpeg?raw=true" alt="Turn Singnal Stalk" width="200"> |
 | Golf 4 Wiper Stalk | Provides OK / UP / DOWN buttons and 4-step rotary switch; input read via resistor ladder. | <img src="https://github.com/Eduard-Alexandru-V/HRL_Car_Driving_Sim/blob/main/images/wiper%20stalk.jpeg?raw=true" alt="Wiper Stalk" width="200"> |
