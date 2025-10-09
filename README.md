@@ -101,7 +101,7 @@ The Arduino expects data from SimHub in the following order, each value on a sep
 - Gearbox assemblies for servo-to-needle drive
 - Mounting brackets and supports for servos inside the cluster shell
 
-STL files are included in the `STL/` folder.
+STL files are included in the [`/STL`](https://github.com/Eduard-Alexandru-V/HRL_Car_Driving_Sim/tree/main/STL)  folder.
 
 ---
 
