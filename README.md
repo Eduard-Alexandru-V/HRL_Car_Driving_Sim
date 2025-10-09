@@ -482,6 +482,102 @@ void loop() {
 
 ---
 
+## SimHub Setup Guide
+
+This section explains how to configure **SimHub** to send telemetry data to the Arduino dashboard.  
+SimHub will output 7 values (RPM, Speed, Temperature, Fuel, Instant Consumption, Turn Indicators Left & Right) through a **Custom Serial Device**, which the Arduino reads in real time to control the servos and relays.
+
+---
+
+### 1. Connect and Detect the Arduino
+
+1. Flash the firmware to your Arduino Pro Micro .  
+2. Connect the board to your PC using a USB cable.  
+3. Open **SimHub** and go to the **Custom Serial Devices** tab → **Add New Serial Device**.  
+4. Check that the board is listed with its COM port.
+
+<img src="https://github.com/Eduard-Alexandru-V/HLR_Car_Driving_Sim/blob/main/images/connecting%20the%20arduino.jpeg?raw=true" width="1000">
+
+---
+
+### 2. Setup the Serial Device
+
+1. Give it a name (for example: `Golf4Dash`).  
+2. Set the **Serial Speed** to `115200`.  .  
+3. Set **Output Frequency** to `60 Hz`.
+
+   <img src="https://github.com/Eduard-Alexandru-V/HLR_Car_Driving_Sim/blob/main/images/setting%20up%20the%20arduino.jpeg?raw=true" width="1000">
+
+4. In the **Update Messages** box, in the **Computed value**, paste the following:
+   
+ ```ccp
+   
+  ''+round([Rpms],0)+'\n'+
+  ''+round([SpeedKmh],0)+'\n'+
+  ''+round([OilTemperature],0)+'\n'+ 
+  ''+round([FuelPercent],0)+'\n'+ 
+  ''+round([InstantConsumption_L100KM],0)+'\n'+
+  ''+[TurnIndicatorLeft]+'\n'+
+  ''+[TurnIndicatorRight]+'\n'
+  
+ ```
+
+ Explanation for each of the lines:
+
+| Line | Data Type                  | Description                     |
+|------|-----------------------------|----------------------------------|
+| 1    | RPM                         | Engine RPM                      |
+| 2    | SpeedKmh                   | Vehicle speed in km/h           |
+| 3    | OilTemperature            | Coolant / oil temperature (°C)  |
+| 4    | FuelPercent               | Remaining fuel (%)              |
+| 5    | InstantConsumption_L100KM | Live fuel consumption           |
+| 6    | TurnIndicatorLeft         | Left blinker state (0 or 1)     |
+| 7    | TurnIndicatorRight        | Right blinker state (0 or 1)    |
+
+<img src="https://github.com/Eduard-Alexandru-V/HLR_Car_Driving_Sim/blob/main/images/ncalc%20formula.jpeg?raw=true" width="1000">
+
+---
+
+### 3. Configure the Output Data Format
+
+The firmware expects each telemetry value on a **separate line** and in the **exact order** shown above.  
+Do not modify the format or add extra characters.
+
+
+---
+
+### 4. Enable the Device
+
+1. Tick the checkbox next to your `Golf4Dash` device to enable it.  
+2. Click **Save and Restart** SimHub if required.  
+3. Launch your game.  
+4. SimHub will now stream telemetry to the Arduino.
+
+<img src="https://github.com/Eduard-Alexandru-V/HLR_Car_Driving_Sim/blob/main/images/connect%20the%20serial%20device.jpeg?raw=true" width="1000">
+
+---
+
+### 5. Verify Incoming Data
+
+While SimHub is running, you cannot open the Arduino Serial Monitor because the COM port is already in use.  
+To check the data being sent:
+
+1. Go to **Arduino** → **Custom Serial** in SimHub.  
+2. Next to your device, click **Log incoming data**.  
+3. A new window will display the 7-line telemetry block being sent to the Arduino (When the game is running)  , for example:
+
+```ccp
+2431
+82
+89
+43
+12
+0
+1
+```  
+
+---
+
 ## License
 
 This project is released under the MIT License. It may be modified and adapted for educational or personal use.
