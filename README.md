@@ -17,6 +17,12 @@
   - [Keyboard Emulation](#keyboard-emulation)
   - [Serial Console Commands](#serial-console-commands)
   - [Arduino Code](#arduino-code)
+- [SimHub Setup Guide](#simhub-setup-guide)
+   - [Connect and Detect the Arduino](#connect-and-detect-the-arduino)
+   - [Setup the Serial Device](#setup-the-serial-device)
+   - [Configure the Output Data Format](#configure-the-output-data-format)
+   - [Enable the Device](#enable-the-device)
+   - [Verify Incoming Data](#verify-incoming-data)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -489,7 +495,7 @@ SimHub will output 7 values (RPM, Speed, Temperature, Fuel, Instant Consumption,
 
 ---
 
-### 1. Connect and Detect the Arduino
+### 1. Connect and Detect the Arduino <a id="connect-and-detect-the-arduino"></a>
 
 1. Flash the firmware to your Arduino Pro Micro .  
 2. Connect the board to your PC using a USB cable.  
@@ -500,7 +506,7 @@ SimHub will output 7 values (RPM, Speed, Temperature, Fuel, Instant Consumption,
 
 ---
 
-### 2. Setup the Serial Device
+### 2. Setup the Serial Device <a id="setup-the-serial-device"></a>
 
 1. Give it a name (for example: `Golf4Dash`).  
 2. Set the **Serial Speed** to `115200`.  .  
@@ -538,7 +544,7 @@ SimHub will output 7 values (RPM, Speed, Temperature, Fuel, Instant Consumption,
 
 ---
 
-### 3. Configure the Output Data Format
+### 3. Configure the Output Data Format <a id="configure-the-output-data-format"></a>
 
 The firmware expects each telemetry value on a **separate line** and in the **exact order** shown above.  
 Do not modify the format or add extra characters.
@@ -546,7 +552,7 @@ Do not modify the format or add extra characters.
 
 ---
 
-### 4. Enable the Device
+### 4. Enable the Device <a id="enable-the-device"></a>
 
 1. Tick the checkbox next to your `Golf4Dash` device to enable it.  
 2. Click **Save and Restart** SimHub if required.  
@@ -557,7 +563,7 @@ Do not modify the format or add extra characters.
 
 ---
 
-### 5. Verify Incoming Data
+### 5. Verify Incoming Data <a id="verify-incoming-data"></a>
 
 While SimHub is running, you cannot open the Arduino Serial Monitor because the COM port is already in use.  
 To check the data being sent:
