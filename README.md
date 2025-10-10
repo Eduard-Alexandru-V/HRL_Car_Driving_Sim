@@ -1,5 +1,10 @@
 # HLR Car Driving Simulator 
 
+This project is part of HyperLine Robotics Team projects. You can view more on our website: [hyperlinerobotics.com](https://hyperlinerobotics.com/)
+
+<p align="center">
+  <img src="https://hyperlinerobotics.com/assets/images/logo.png" alt="HyperLine Robotics Logo" width="150" height="auto">
+</p>
 
 ## Table of Contents
 - [Project Overview](#project-overview)
